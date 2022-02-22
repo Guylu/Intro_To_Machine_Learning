@@ -1,0 +1,2010 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{0, 0, 140}
+\definecolor{green}{RGB}{0, 140, 0}
+\definecolor{red}{RGB}{220, 0, 0}
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\T}{\intercal}
+{\intercal}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+
+\lang english
+67577 | Introduction to Machine Learning
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Exercise 2
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Author
+
+\lang english
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Graphics
+	filename pasted7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}1}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+Let 
+\begin_inset Formula $X\in\RR^{pXn}$
+\end_inset
+
+ be a matrix we will prove 
+\begin_inset Formula $Ker(X^{T})\subset Ker(XX^{T})\wedge Ker(XX^{T})\subset Ker(X^{T})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ker(X^{T})\subset Ker(XX^{T}):
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+Let 
+\begin_inset Formula $v\in Ker(X^{T})$
+\end_inset
+
+ then 
+\begin_inset Formula $XX^{T}v=X\cdot0=0\ra v\in Ker(XX^{T})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ker(XX^{T})\subset Ker(X^{T}):
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+let 
+\begin_inset Formula $v\in Ker(XX^{\T})\ra XX^{\T}v=0$
+\end_inset
+
+ lets look at 
+\begin_inset Formula $0=v^{\T}XX^{\T}v=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $(X^{\T}v)^{\T}(X^{\T}v)\ra X^{\T}v\overset{vector\ that\ orthogonal\ to\ itself\ is\ the\ 0\ vector}{=}0\ra v\in Ker(X^{\T})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted12.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+lets prove the statement:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+Im(A^{T})\subset Ker(A)^{\perp}:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+let 
+\begin_inset Formula $v\in Im(A^{T})$
+\end_inset
+
+ and let 
+\begin_inset Formula $w\in Ker(A)$
+\end_inset
+
+ we need to prove that 
+\begin_inset Formula $\li v,w\ri=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+we know that 
+\begin_inset Formula $Aw=0$
+\end_inset
+
+ and that 
+\begin_inset Formula $\E u,s.t\ v=A^{T}u=v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\li v,w\ri=\li A^{T}u,w\ri\overset{parseval}{=}(A^{T}u)^{T}w=u^{T}Aw\overset{w\in Ker(A)}{=}u^{T}\cdot0=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+Ker()^{\perp}\subset Im(A^{T}):
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+let 
+\begin_inset Formula $v\in Ker(A)^{\perp}$
+\end_inset
+
+, we need to prove that 
+\begin_inset Formula $\E u,s.t\ v=A^{T}u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+suppose there is no 
+\begin_inset Formula $u$
+\end_inset
+
+ s.t 
+\begin_inset Formula $\forall w\in Ker(A)$
+\end_inset
+
+ it holds that 
+\begin_inset Formula $\li A^{T}u,w\ri\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+from parseval 
+\begin_inset Formula $\li A^{T}u,w\ri=u^{T}Aw=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted13.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+we know that the system has 
+\begin_inset Formula $\infty$
+\end_inset
+
+ solution meaning there exists at least one solution w.
+\end_layout
+
+\begin_layout Quotation
+so we know that 
+\begin_inset Formula $y\in Im(A^{T})\ra$
+\end_inset
+
+from Q2 we know that 
+\begin_inset Formula $Im(A^{T})=Ker(A)^{\perp}\ra y\in Ker(A)^{\perp}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\ra y\perp Ker(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted14.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+we know that 
+\begin_inset Formula $XX^{T}w=Xy$
+\end_inset
+
+, now if 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+is invertible then we can multiply from the left
+\end_layout
+
+\begin_layout Quotation
+both sides by 
+\begin_inset Formula $(XX^{T})^{-1}$
+\end_inset
+
+ and get 
+\begin_inset Formula $w=(XX^{T})^{-1}Xy$
+\end_inset
+
+ as a unique solution to the equation
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+if however 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+is invertible, we know that it has 
+\begin_inset Formula $\infty$
+\end_inset
+
+ solutions 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $X^{T}y\perp Ker(X^{T}X)\overset{Q1}{=}Ker(X)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+lemma:
+\begin_inset Formula $X^{T}y\perp Ker(X)$
+\end_inset
+
+.
+ proof: let 
+\begin_inset Formula $v\in Ker(X)$
+\end_inset
+
+ lets look at 
+\begin_inset Formula $\li X^{T}y,v\ri=y^{T}Xv=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+so we proved that 
+\begin_inset Formula $X^{T}y\perp Ker(X)$
+\end_inset
+
+ which means that the system has 
+\begin_inset Formula $\infty$
+\end_inset
+
+ solutions, as required.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted15.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(a) notice that 
+\begin_inset Formula $\forall v\in V,\ v\cdot v^{\T}$
+\end_inset
+
+ is a symmetric matrix s.t if 
+\begin_inset Formula $v=\begin{bmatrix}a_{1}\\
+\vdots\\
+a_{n}
+\end{bmatrix},\ [v\cdot v^{\T}]_{i,j}=[a_{i}\cdot a_{j}],\ \ v\cdot v^{\T}=\begin{bmatrix}a_{1}^{2} & ... & a_{1}a_{i} & a_{1}a_{n}\\
+\vdots & \ddots &  & \cdots\\
+a_{1}a_{i} & \cdots & a_{i}a_{j} & a_{i}a_{n}\\
+a_{1}a_{n} & \cdots & \cdots & a_{n}a_{n}
+\end{bmatrix}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Quotation
+such a matrix is symmetric since
+\begin_inset Formula $\begin{bmatrix}a_{1}^{2} & ... & a_{1}a_{i} & a_{1}a_{n}\\
+\vdots & \ddots &  & \cdots\\
+a_{1}a_{i} & \cdots & a_{i}a_{j} & a_{i}a_{n}\\
+a_{1}a_{n} & \cdots & \cdots & a_{n}a_{n}
+\end{bmatrix}^{\T}=\begin{bmatrix}a_{1}^{2} & ... & a_{1}a_{i} & a_{1}a_{n}\\
+\vdots & \ddots &  & \cdots\\
+a_{1}a_{i} & \cdots & a_{i}a_{j} & a_{i}a_{n}\\
+a_{1}a_{n} & \cdots & \cdots & a_{n}a_{n}
+\end{bmatrix}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Quotation
+and so P is a sum of symmetric matrices, and its not hard to see that a
+ sum of symmetric matrices
+\end_layout
+
+\begin_layout Quotation
+is a symmetric matrix as well.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(b) we know that 
+\begin_inset Formula $\RR^{d}=Im(P)\xor Ker(P)\ s.t,\forall v\in Im(P)^{-1}\ Pv=v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+(didn't see we need to prove it is c, but suppose the proof is here :) )
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+meaning each vector in 
+\begin_inset Formula $\RR^{d}$
+\end_inset
+
+ is either in the kernel, meaning it is an eigenvector of value 0
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+or it is in the Image meaning it stays where it was- eigenvector of value
+ 1.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+if we take the basis of V and expand to the 
+\begin_inset Formula $\RR^{d}\ra v_{1}...v_{k},v_{k+1}...v_{d}$
+\end_inset
+
+ we will notice that 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $v_{1}...v_{k}$
+\end_inset
+
+ span V and so they are in Image(P) meaning they are the eigenvectors with
+ value 1.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+and since that a subspace of dim k, that means for a fact that the rest
+ of the basis vectors
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+are in the kernel.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(c) let 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ we can represent 
+\begin_inset Formula $v$
+\end_inset
+
+ as a linear combination of the base vectors 
+\begin_inset Formula $v_{1}...v_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ which are also eigenvectors s.t 
+\begin_inset Formula $v=\sumin a_{i}v_{i}$
+\end_inset
+
+ lets look at :
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+Pv=P(\sumin a_{i}v_{i})=\sumin a_{i}Pv_{i}\overset{v_{i}\ is\ an\ eigenvector}{=}\sumin a_{i}v_{i}=v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(d) lets look at: 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+P^{2}=(\sumik v_{i}v_{i}^{\T})^{2}=\sumjk(v_{j}v_{j}^{\T}\cdot\sumik v_{i}v_{i}^{\T})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+and now for each j we can see that:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+v_{j}v_{j}^{\T}\cdot\sumik v_{i}v_{i}^{\T}=\sumin v_{j}\cdot\li v_{j},v_{i}\ri v_{i}^{\T}\overset{\li v_{j},v_{i}\ri=\delta(v_{i},v_{j}\ri}{=}v_{j}v_{j}^{\T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+meaning that:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+P^{2}=\sumjk(v_{j}v_{j}^{\T}\cdot\sumik v_{i}v_{i}^{\T})=\sumik v_{i}v_{i}^{\T}=P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(e) 
+\begin_inset Formula 
+\[
+(I-P)P=(I-P)\sumik v_{i}v_{i}^{\T}=\sumik(I-P)v_{i}\cdot v_{i}^{\T}\overset{v_{i}\ eigenvector\ of\ value\ 1}{=}\sumik(v_{i}-v_{i})v_{i}^{\T}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted18.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+lets look at 
+\begin_inset Formula $(XX^{\T})^{-1}=(U\Sigma V^{\T}(U\Sigma V^{\T})^{\T})^{-1}=(U\Sigma V^{\T}(V\Sigma^{\T}U^{\T}))^{-1}\overset{V\ is\ Orthogonal}{=}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $(U\Sigma\Sigma^{\T}U^{\T})^{-1}\overset{denote\ D=\Sigma\Sigma^{\T}}{=}(UD^{-1}U^{\T})^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+now lets look at 
+\begin_inset Formula $(XX^{\T})^{-1}X=(UD^{-1}U^{\T})^{-1}X=UD^{-1\T}U^{\T}U\Sigma V^{\T}=U(\Sigma\Sigma^{\T})^{-1}\Sigma V^{\T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $U\Sigma^{\T^{-1}}\Sigma^{-1}\Sigma V^{\T}=U\Sigma^{\T^{-1}}V^{\T}\overset{XX^{\T}\ is\ invertible}{=}U\Sigma^{\T^{\dagger}}V^{\T}=(V^{\T}\Sigma^{\dagger}U)^{\T}=X^{\dagger^{\T}}=X^{\T^{\dagger}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted19.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+if 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ is invertible, that means its kernel is 0 and from Q1
+\end_layout
+
+\begin_layout Quotation
+we know that means 
+\begin_inset Formula $X^{\T}$
+\end_inset
+
+ kernel is zero too, 
+\end_layout
+
+\begin_layout Quotation
+that means its column space is all of 
+\begin_inset Formula $\RR^{d}$
+\end_inset
+
+ meaning that 
+\begin_inset Formula $span(x_{1}...x_{m})=\RR^{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+if 
+\begin_inset Formula $span(x_{1}...x_{m})=\RR^{d}$
+\end_inset
+
+ then X is full rank meaning its column space and row space
+\end_layout
+
+\begin_layout Quotation
+are of rank d meaning that 
+\begin_inset Formula $deg(X)=deg(X^{\T})=d\ra X^{\T}$
+\end_inset
+
+has kernel 0
+\end_layout
+
+\begin_layout Quotation
+and from Q1 that means 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ is invertible.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted20.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+lets assume that there exists a partition of X's singular values which we
+ will denote as 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $x_{1}..x_{n}$
+\end_inset
+
+ s.t 
+\backslash
+
+\begin_inset Formula $\forall1\le i\le k\ x_{i}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall k+1\le j\le n\ x_{j}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+that means that for each solution 
+\begin_inset Formula $w$
+\end_inset
+
+ their first k components must be identical for them to be
+\end_layout
+
+\begin_layout Quotation
+a solution to the equation system.
+\end_layout
+
+\begin_layout Quotation
+denote 
+\begin_inset Formula $\bar{w}=\begin{bmatrix}\bar{w}_{1}\\
+\vdots\\
+\bar{w}_{n}
+\end{bmatrix},\hat{w}=\begin{bmatrix}\hat{w}_{1}\\
+\vdots\\
+\hat{w}_{n}
+\end{bmatrix}$
+\end_inset
+
+ notice that 
+\begin_inset Formula $\forall k+1\le j\le n,\ \bar{w}_{j}=0$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+and lets look at:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\norm\hat{w}\norm=\sqrt{\sumin\hat{(w}_{i})^{2}}=\sqrt{\sumik(\hat{w}_{i})^{2}+\sum_{i=k+1}^{n}(\hat{w}_{i})^{2}}=\sqrt{\sumik(\hat{w}_{i})^{2}+\sum_{i=k+1}^{n}0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\le\sqrt{\sumik\bar{(w_{i})^{2}}}=\bar{\norm\bar{w}\norm}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}13$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+I chose as categorical features zipcode, lan, long.
+\end_layout
+
+\begin_layout Quotation
+I chose these since i thought those features couldn't impact the price in
+ a linear way.
+\end_layout
+
+\begin_layout Quotation
+meaning maybe these features can affect the price, but its hard to see how
+ it could affect it linearly.
+\end_layout
+
+\begin_layout Quotation
+and so i chose to make them dummy features in my data set.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}15$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+scree plot:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted33.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+There are a couple of singular values which are zero, and so the matrix
+ is invertible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+MSE plot:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted22.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+and the last 50 results:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted24.png
+	lyxscale 80
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+explaining: we can clearly wee that as the percentage of data we train our
+ model on
+\end_layout
+
+\begin_layout Quotation
+the accuracy increases.
+\end_layout
+
+\begin_layout Quotation
+we can see this by the fact that the error rate drops as the percentage
+ increases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}17$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+we can see that the highest correlation features with price are grade and
+ sqrt_living:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted26.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted25.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+and we can see that waterfront, doesn't seem to be very beneficial(low correlati
+on) for the model:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted27.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}21$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+Graphs of our model for COVID19:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted28.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Graphics
+	filename pasted29.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}22$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted32.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+we could try to use :
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+L_{exp}(f_{w},(x,y))=(e^{\li w,x\ri}-y)\2=e^{2\li w,x\ri}-2ye^{\li w,x\ri}+y^{2}=e^{2\sumin w_{i}x_{i}}-2ye^{\sumin w_{i}x_{i}}+y^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+=\prod_{i=1}^{n}e^{2w_{i}x_{i}}-2y\prod_{i=1}^{n}e^{w_{i}x_{i}}+y^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+so we can look at:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial w_{i}}=2x_{i}\prod_{i=1}^{n}e^{2w_{i}x_{i}}-2yx_{i}\prod_{i=1}^{n}e^{w_{i}x_{i}}=2x_{i}e^{\li w,x\ri}(e^{\li w,x\ri}-y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+and try to find a vector that zeros out the equation, s,t it is a min point.
+\end_layout
+
+\begin_layout Quotation
+ans so, for m samples, we need to find 
+\begin_inset Formula $\hat{w}=min\{\sumim(e^{\li w,x\ri}-y_{i})^{2}\}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
