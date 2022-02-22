@@ -1,0 +1,2889 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67577 | Introduction to Machine Learning | Exercise 4
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}1}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted25.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We need to prove that: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall\varepsilon,\delta>0\ \E m(\varepsilon,\delta)\ \forall m\ge m(\varepsilon,\delta):\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(A(S)\le\varepsilon]\ge1-\delta\iff\underset{m\ra\infty}{lim}\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\EE}[L_{\mathcal{D}}(A(S))]=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we shall prove:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\[
+b\RA a:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that 
+\begin_inset Formula $\underset{m\ra\infty}{lim}\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\EE}[L_{\mathcal{D}}(A(S))]=0$
+\end_inset
+
+ that means that 
+\begin_inset Formula $\forall\varepsilon^{'}>0,\E N,s.t\ \forall n>N\ \underset{S\sim\mathfrak{\mathcal{D^{\mathrm{n}}}}}{\EE}[L_{\mathcal{D}}(A(S))]<\varepsilon^{'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, we can choose 
+\begin_inset Formula $\varepsilon^{'}=\varepsilon\cdot\delta,$
+\end_inset
+
+and derive that
+\end_layout
+
+\begin_layout Standard
+there must exists 
+\begin_inset Formula $n$
+\end_inset
+
+ s.t 
+\begin_inset Formula $n>m(\varepsilon,\delta)$
+\end_inset
+
+ s.t 
+\begin_inset Formula $\underset{S\sim\mathfrak{\mathcal{D^{\text{n}}}}}{\EE}[L_{\mathcal{D}}(A(S))]<\varepsilon^{'}=\varepsilon\cdot\delta.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, 
+\begin_inset Formula $\forall\varepsilon,\delta>0\ \E m(\varepsilon,\delta)\ \forall m\ge m(\varepsilon,\delta):\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(A(S)\ge\varepsilon]\overset{\text{Markov's inequallity}}{\le}\frac{\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\EE}[L_{\mathcal{D}}(A(S))]}{\varepsilon}\le\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so we can conclude that 
+\begin_inset Formula $\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(A(S)\le\varepsilon]\ge1-\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, lets tend to the other side, lets prove that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\RA b:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that 
+\begin_inset Formula $\forall\varepsilon,\delta>0\ \E m(\varepsilon,\delta)\ \forall m\ge m(\varepsilon,\delta):\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(A(S)\le\varepsilon]\ge1-\delta$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Which can we written as statement 
+\begin_inset Formula $\kappa:$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon,\delta>0\ \E m(\varepsilon,\delta)\ \forall m\ge m(\varepsilon,\delta):\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(A(S)>\varepsilon]<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, we can see that 
+\begin_inset Formula $\forall m>m(\varepsilon,\delta)$
+\end_inset
+
+ it hold that, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0\overset{\text{must be}}{<} & \underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\EE}[L_{\mathcal{D}}(A(S))]\overset{\text{from definition}}{=}\\
+ & \sum_{S\in\mathcal{D}^{m}}\PP(S)\cdot L_{\mathcal{D}}(A(S))\\
+ & \overset{\text{split into 2 sums}}{=}\sum_{\underset{s.t\ L_{\mathcal{D}}(A(S))<\varepsilon}{S\in\mathcal{D}^{m}}}\PP(S)\cdot L_{\mathcal{D}}(A(S))+\sum_{\underset{s.t\ L_{\mathcal{D}}(A(S))\ge\varepsilon}{S\in\mathcal{D}^{m}}}\PP(S)\cdot L_{\mathcal{D}}(A(S))\\
+ & \overset{\text{make \ensuremath{L_{\mathcal{D}}}as large as possible}}{\le}\sum_{\underset{s.t\ L_{\mathcal{D}}(A(S))<\varepsilon}{S\in\mathcal{D}^{m}}}\PP(S)\cdot\varepsilon+\sum_{\underset{s.t\ L_{\mathcal{D}}(A(S))\ge\varepsilon}{S\in\mathcal{D}^{m}}}\PP(S)\cdot1\\
+ & \overset{\text{Sigma addativity}}{=}\PP(\underset{\underset{s.t\ L_{\mathcal{D}}(A(S))<\varepsilon}{S\in\mathcal{D}^{m}}}{\mathbin{\dot{\bigcup}}}S)\cdot\varepsilon+\PP(\underset{\underset{s.t\ L_{\mathcal{D}}(A(S))>\varepsilon}{S\in\mathcal{D}^{m}}}{\mathbin{\dot{\bigcup}}}S)\overset{\text{definition}}{=}\PP(L_{\mathcal{D}}(A(S))<\varepsilon)\cdot\varepsilon+\PP(L_{\mathcal{D}}(A(S))>\varepsilon)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overset{\text{according to statement \ensuremath{\kappa} }}{<}\PP(L_{\mathcal{D}}(A(S))<\varepsilon)\cdot\varepsilon+\delta\overset{\PP(L_{\mathcal{D}}(A(S))<\varepsilon)<1}{<}\varepsilon+\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so 
+\begin_inset Formula $\forall\varepsilon^{'}>0$
+\end_inset
+
+ we can find 
+\begin_inset Formula $m>m(\varepsilon,\delta)$
+\end_inset
+
+ s.t:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\EE}[L_{\mathcal{D}}(A(S))]<\varepsilon+\delta=\varepsilon^{'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so by the limit definition we will get that indeed 
+\begin_inset Formula $\underset{m\ra\infty}{lim}\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\EE}[L_{\mathcal{D}}(A(S))]=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted26.png
+	BoundingBox 0bp 0bp 1200bp 372bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Firstly we have got 
+\begin_inset Formula $m$
+\end_inset
+
+ samples of 
+\begin_inset Formula $S=(x_{i},y_{i})_{i=1}^{m}\in\RR^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+My algorithm 
+\begin_inset Formula $A$
+\end_inset
+
+ will look for for the farthermost point in 
+\begin_inset Formula $S$
+\end_inset
+
+ from the origin.
+\end_layout
+
+\begin_layout Standard
+Such a point will have the largest euclidean norm, and so its a simple maximizat
+ion problem.
+\end_layout
+
+\begin_layout Standard
+We shall denote our guess as the circle 
+\begin_inset Formula $C_{r_{estimated}}$
+\end_inset
+
+ centered at the origin, and with radius 
+\begin_inset Formula $r_{estimated}=\underset{\underset{s\text{ is labled with \ensuremath{y=1}}}{s\in S}}{max}\norm s\norm$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Define that 
+\begin_inset Formula $max\ \emptyset=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, lets denote the actual circle with 
+\begin_inset Formula $C_{r_{real}}$
+\end_inset
+
+centered at the origin, and with radius 
+\begin_inset Formula $r_{real}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $r_{estimated}\le r_{real}.$
+\end_inset
+
+ And so we can only miss-classify points labeled 1 in 
+\begin_inset Formula $MISS=C_{real}/C_{estimated}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+We need to prove that 
+\begin_inset Formula $\forall\varepsilon,\delta,\mathcal{D}\sim\RR^{2},\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(A(S)\le\varepsilon]\ge1-\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To do that we will give the area 
+\begin_inset Formula $MISS$
+\end_inset
+
+ probability 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ over 
+\begin_inset Formula $\mathcal{D}\sim\RR^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so we get that the probability of the 
+\begin_inset Formula $m$
+\end_inset
+
+ samples to fall in 
+\begin_inset Formula $\RR^{2}/MISS$
+\end_inset
+
+ is 
+\begin_inset Formula $(1-\varepsilon)^{m}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so we would like for 
+\begin_inset Formula $(1-\varepsilon)^{m}<\delta$
+\end_inset
+
+, we know that 
+\begin_inset Formula $(1-\varepsilon)^{m}\le e^{-m\varepsilon}\ra m\ge\frac{log(1/\delta)}{\varepsilon}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Which means that 
+\begin_inset Formula $m_{\mathcal{H}}(\varepsilon,\delta)\le\frac{log(1/\delta)}{\varepsilon}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}3}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted27.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{H}_{con}=\{h:2^{2d}\ra\{0,1\}|h\text{ is a boolean conjunction}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us recall that 
+\begin_inset Formula $VC\mathcal{H}_{con}=max\{|C|\ |C\in\mathcal{X},|\mathcal{H_{C}}|=2^{|C|}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Statement: The VC-dimention of 
+\begin_inset Formula $\mathcal{H}_{con}$
+\end_inset
+
+ is d!
+\end_layout
+
+\begin_layout Standard
+Proof: 
+\end_layout
+
+\begin_layout Standard
+Let us firstly show that 
+\begin_inset Formula $VC\mathcal{H}_{cal}\ge d:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $C=\{x_{1}...x_{d}|x_{i}=e_{i}\}$
+\end_inset
+
+ then for any 
+\begin_inset Formula $\{y_{i}\in\{0,1\}^{d}|i\in[d]\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lets define 
+\begin_inset Formula $h(x_{j})=\underset{y_{i}=0}{\bigwedge\overline{x_{ji}}}$
+\end_inset
+
+.
+ when the first coordinate is which vector, and the second is the position
+ within.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\E j$
+\end_inset
+
+ s.t 
+\begin_inset Formula $h(x_{j})=1$
+\end_inset
+
+ then we will get a conjugate on 1's only, because 
+\begin_inset Formula $x_{ji}=0$
+\end_inset
+
+ and so for any 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $h(x_{j})=y_{j}=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\E j$
+\end_inset
+
+ s.t 
+\begin_inset Formula $h(x_{j})=0$
+\end_inset
+
+ then we will get a conjugate with at least one 0, because 
+\begin_inset Formula $x_{ji}=1$
+\end_inset
+
+ and so 
+\begin_inset Formula $h(x_{j})=y_{j}=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that there isn't a 
+\begin_inset Formula $j$
+\end_inset
+
+ such that 
+\begin_inset Formula $y_{j}=0$
+\end_inset
+
+ we will receive an empty conjugate 
+\end_layout
+
+\begin_layout Standard
+which it True by default, and we will get that for any 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $h(x_{j})=y_{j}=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And what we get, is that for any group 
+\begin_inset Formula $C$
+\end_inset
+
+ of size 
+\begin_inset Formula $d$
+\end_inset
+
+ we can define a conjugate
+\end_layout
+
+\begin_layout Standard
+which will get to the entire 
+\begin_inset Formula $Image-\{0,1\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+and so 
+\begin_inset Formula $|\mathcal{H_{C}}|=2^{|C|}$
+\end_inset
+
+ which means 
+\begin_inset Formula $C$
+\end_inset
+
+ shatters 
+\begin_inset Formula $H_{C}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, let us show that 
+\begin_inset Formula $VC\mathcal{H}_{con}\le d:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let assume towards a contradiction that 
+\begin_inset Formula $\E C=\{x_{i}|i\in[d+1]\}$
+\end_inset
+
+ that shatters 
+\begin_inset Formula $\mathcal{H}_{con}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This means that for any 
+\begin_inset Formula $\{y_{i}\in\{0,1\}^{d}|i\in[d+1]\}$
+\end_inset
+
+ s.t 
+\begin_inset Formula $|\{h_{i}|i\in[d+1],h_{i}:\{0,1\}^{d+1}\ra\{0,1\}|=2^{d+1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It also means that we can write this as 
+\begin_inset Formula $h_{i}(x_{j})=\overline{\delta_{Kronecker}(i,j)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the way our Hypotheses class is build we know that there exists a literal
+ that negates 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ and does not
+\end_layout
+
+\begin_layout Standard
+negate any other variable in 
+\begin_inset Formula $C$
+\end_inset
+
+ , and so there exists a coordinate within 
+\begin_inset Formula $x_{i}\ra x_{ij}$
+\end_inset
+
+such that is it different then
+\end_layout
+
+\begin_layout Standard
+all of the other variables in 
+\begin_inset Formula $C$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Now, it follows that each 
+\begin_inset Formula $h_{i}$
+\end_inset
+
+ has such a property, and so 
+\begin_inset Formula $\forall x_{i}\E j$
+\end_inset
+
+ s.t 
+\begin_inset Formula $x_{ij}$
+\end_inset
+
+is different then all the variables in 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so we can conclude from the Pigeonhole principle, that we a contradiction
+ on our hands, 
+\end_layout
+
+\begin_layout Standard
+because there are 
+\begin_inset Formula $d+1$
+\end_inset
+
+ in the group, yet there are only 
+\begin_inset Formula $d$
+\end_inset
+
+ coordinates.
+\end_layout
+
+\begin_layout Standard
+And so we get that a group of size 
+\begin_inset Formula $d+1$
+\end_inset
+
+ cannot shatter 
+\begin_inset Formula $\mathcal{H}_{con}$
+\end_inset
+
+ , and so we get that 
+\begin_inset Formula $d\le VC\mathcal{H}_{con}<d+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which means that 
+\begin_inset Formula $VC\mathcal{H}_{con}=d$
+\end_inset
+
+, as required.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}4}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted28.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ has the uniform convergence property with the function 
+\begin_inset Formula $m_{\mathcal{H}}^{UC}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now according to definition a hypothesis class 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is Agnostic-PAC learnable if:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall\mathcal{D},\varepsilon,\delta\ \E m_{\mathcal{H}}^{UC}:(0,1)^{2}\ra\NN,s.t\ \forall m>m_{\mathcal{H}}^{UC}(\frac{\varepsilon}{2},\delta)\text{ It Holds That: }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(h_{S})\le\underset{h^{'}\in\mathcal{H}}{min}L_{\mathcal{D}}(h^{'})+\varepsilon]\ge1-\delta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $m>m_{\mathcal{H}}^{UC}(\frac{\varepsilon}{2},\delta)$
+\end_inset
+
+ Now we know that if S is 
+\begin_inset Formula $\frac{\varepsilon}{2}$
+\end_inset
+
+ representative we know that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{\mathcal{D}}(h_{S})\le L_{S}(h_{S})+\frac{\varepsilon}{2}\overset{definition}{\le}L_{S}(\underset{h^{'}\in\mathcal{H}}{argmin}L_{\mathcal{D}}(h^{'}))+\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so because we assumed that 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ has the uniform convergence property with the function 
+\begin_inset Formula $m_{\mathcal{H}}^{UC}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We get that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(h_{S})\le\underset{h^{'}\in\mathcal{H}}{min}L_{\mathcal{D}}(h^{'})+\varepsilon]\overset{\text{Because Of }}{\overset{\text{The Definition}}{\overset{\text{Of \ensuremath{\varepsilon} Representative }}{\ge}}}\PP_{\mathcal{D}}[S\text{ Is \ensuremath{\frac{\varepsilon}{2}} Representative}]\ge1-\delta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which means that we get that 
+\begin_inset Formula $\forall m>m_{\mathcal{H}}^{UC}(\frac{\varepsilon}{2},\delta):\underset{S\sim\mathfrak{\mathcal{D^{\mathrm{m}}}}}{\PP}[L_{\mathcal{D}}(h_{S})\le\underset{h^{'}\in\mathcal{H}}{min}L_{\mathcal{D}}(h^{'})+\varepsilon]\ge1-\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which is the definition of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ to be Agnostic-PAC learnable.
+\end_layout
+
+\begin_layout Standard
+as required:)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}7}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted31.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\mathcal{H}_{1}\subset\mathcal{H}_{2}$
+\end_inset
+
+, Now notice that if a sample 
+\begin_inset Formula $S$
+\end_inset
+
+ of size 
+\begin_inset Formula $m$
+\end_inset
+
+ shatters 
+\begin_inset Formula $\mathcal{H}_{1}$
+\end_inset
+
+ we get that 
+\begin_inset Formula $S$
+\end_inset
+
+ shatters 
+\begin_inset Formula $\mathcal{H}_{2}$
+\end_inset
+
+ as well
+\end_layout
+
+\begin_layout Standard
+simply because of the subset relationship between the groups 
+\begin_inset Formula $\ra$
+\end_inset
+
+ because 
+\begin_inset Formula $\mathcal{H}_{1}\subset\mathcal{H}_{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so we get for free that 
+\begin_inset Formula $VC\mathcal{H}_{1}\le VC\mathcal{H}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notice that this still holds if 
+\begin_inset Formula $VC\mathcal{H}_{1}=\infty.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}8}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted32.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted36.png
+	BoundingBox 0bp 1020bp 1229bp 1081bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given an 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)$
+\end_inset
+
+ measures the maximal cardinal number of a hypotheses class that a samples
+\end_layout
+
+\begin_layout Standard
+with size 
+\begin_inset Formula $m$
+\end_inset
+
+ can 
+\begin_inset Quotes eld
+\end_inset
+
+use
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted36.png
+	BoundingBox 0bp 980bp 1229bp 1030bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $VCdim(\mathcal{H})=\infty$
+\end_inset
+
+, then it holds that for any sample 
+\begin_inset Formula $C$
+\end_inset
+
+ of size 
+\begin_inset Formula $m$
+\end_inset
+
+ will shatter 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and so 
+\end_layout
+
+\begin_layout Standard
+we know that 
+\begin_inset Formula $|\mathcal{H}_{C}|=|2^{C}|=2^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+and so we get that 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)=2^{m}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted36.png
+	BoundingBox 0bp 910bp 1229bp 990bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $VCdim(\mathcal{H})=d$
+\end_inset
+
+, meaning we know there's a sample 
+\begin_inset Formula $C$
+\end_inset
+
+ of size 
+\begin_inset Formula $d$
+\end_inset
+
+ such that 
+\begin_inset Formula $|\mathcal{H}_{C}|=2^{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+And so, we can see that 
+\begin_inset Formula $\forall m\le d,\text{\ensuremath{\forall C^{'}s.t\ |C^{'}|=m\ra C^{'}} shatters \ensuremath{\mathcal{H}}. }$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+And so we can conclude that 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)=2^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted37.png
+	BoundingBox 0bp 170bp 1229bp 920bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i.
+\end_layout
+
+\begin_layout Standard
+We will prove the claim using induction on the size of 
+\begin_inset Formula $C$
+\end_inset
+
+ - 
+\begin_inset Formula $m$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Base: 
+\begin_inset Formula $m=0\ra C=\emptyset$
+\end_inset
+
+ and so 
+\begin_inset Formula $|\mathcal{H}_{C}|=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In addition 
+\begin_inset Formula $\forall B\subset C$
+\end_inset
+
+ it holds that 
+\begin_inset Formula $B$
+\end_inset
+
+ must be equal to 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+And so it does indeed hold that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=|\mathcal{H}_{C}|\le|\{B\subset C:\ \mathcal{H}\ shutters\ B\}|=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Step: Suppose the claim is true for any group with size less then 
+\begin_inset Formula $m.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Let us prove the claim for 
+\begin_inset Formula $m$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $C$
+\end_inset
+
+ be a group of size m, and also let 
+\begin_inset Formula $c\in C$
+\end_inset
+
+ be an element of 
+\begin_inset Formula $C$
+\end_inset
+
+, finally let 
+\begin_inset Formula $B=C/c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+and notice that 
+\begin_inset Formula $|B|=m-1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, using the induction hypothesis we know that 
+\begin_inset Formula $|\mathcal{H}_{B}|\le|\{A\subset B:\ \mathcal{H}\ shutters\ A\}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition we know that 
+\begin_inset Formula $c$
+\end_inset
+
+ can be tagged as wither 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ and so 
+\begin_inset Formula $|\mathcal{H}_{C}|\le2\cdot|\mathcal{H}_{B}|$
+\end_inset
+
+.
+ And finally:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{H}_{C}|\le2\cdot|\mathcal{H}_{B}|\le2\cdot|\{B\subset C:\ \mathcal{H}\ shutters\ B\}|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ii.
+\end_layout
+
+\begin_layout Standard
+The meaning of the inequality is that for any group 
+\begin_inset Formula $C$
+\end_inset
+
+ the cardinal number of the class
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{H}_{C}$
+\end_inset
+
+ is lesser of equal to the number of all subsets 
+\begin_inset Formula $B\subset C$
+\end_inset
+
+ that shatter 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+iii.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $C$
+\end_inset
+
+ be of finite size, such that 
+\begin_inset Formula $|C|=m>d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Then the number of all subsets of 
+\begin_inset Formula $C$
+\end_inset
+
+ of size at max 
+\begin_inset Formula $d$
+\end_inset
+
+ is 
+\begin_inset Formula $\sum_{k=0}^{d}\binom{m}{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We know that 
+\begin_inset Formula $VCdim(\mathcal{H})=d$
+\end_inset
+
+ , and so the group 
+\begin_inset Formula $G=\{B\subset C:\ \mathcal{H}\ shutters\ B\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+uphold that for any element 
+\begin_inset Formula $E\in G$
+\end_inset
+
+ we know that 
+\begin_inset Formula $|E|\le d$
+\end_inset
+
+ and so :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\{B\subset C:\ \mathcal{H}\ shutters\ B\}|\le\sum_{k=0}^{d}\binom{m}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+iv.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $VCdim(\mathcal{H})=d<m$
+\end_inset
+
+, and let 
+\begin_inset Formula $B$
+\end_inset
+
+ be a group of size 
+\begin_inset Formula $m$
+\end_inset
+
+ such that 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)=|\mathcal{H}_{B}|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, notice that from i,ii we get that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau_{\mathcal{H}}(m)=|\mathcal{H}_{B}|\le|\{A\subset B:\ \mathcal{H}\ shutters\ A\}|\le\sum_{k=0}^{d}\binom{m}{k}\le(\frac{e\cdot m}{d})^{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted38.png
+	BoundingBox 0bp 130bp 1229bp 180bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $d=m$
+\end_inset
+
+, then the inequality still holds, according the prove above.
+\end_layout
+
+\begin_layout Standard
+Suppose we have a group 
+\begin_inset Formula $C$
+\end_inset
+
+ of size 
+\begin_inset Formula $m$
+\end_inset
+
+ that shatters 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ then we know that 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)=2^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\frac{e\cdot m}{d})^{d}=(\frac{e\cdot d}{d})^{d}=e^{d}>2^{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so, all still holds.
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Graphics
+	filename ../../Ex 3/lyx/pasted38.png
+	BoundingBox 0bp 0bp 1229bp 125bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that for 
+\begin_inset Formula $m\le VCdim(\mathcal{H})$
+\end_inset
+
+ it holds that 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)=2^{m}$
+\end_inset
+
+ as is increases exponentially.
+\end_layout
+
+\begin_layout Standard
+Yet if 
+\begin_inset Formula $m>VCdim(\mathcal{H})$
+\end_inset
+
+ we saw that 
+\begin_inset Formula $\tau_{\mathcal{H}}(m)\le(\frac{e\cdot m}{d})^{d}$
+\end_inset
+
+ meaning it grows slower- polynomialy.
+\end_layout
+
+\begin_layout Standard
+Meaning we can define 
+\begin_inset Formula $VCdim(\mathcal{H})$
+\end_inset
+
+ thusly:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VCdim(\mathcal{H})=max\{m\in\NN|\tau_{\mathcal{H}}(m)=2^{m}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Coding\ Part:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}10}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename pasted2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see here that both the training error, and the test error drops as the
+ number of classifiers rises 
+\end_layout
+
+\begin_layout Standard
+and they both hit a platou.
+ Also we see that the test error is above the training error.
+\end_layout
+
+\begin_layout Standard
+Here we had 0 noise and so there wasn't noise to overffit to- we will see
+ that in the next questions.
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}11}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename pasted4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that using only 5 classifiers yielded a bad trivial classification
+ of the data(all blue).
+\end_layout
+
+\begin_layout Standard
+And as the number if classifiers rises we see a 
+\begin_inset Quotes eld
+\end_inset
+
+tighter
+\begin_inset Quotes erd
+\end_inset
+
+ classification, which is growing in accuracy.
+\end_layout
+
+\begin_layout Standard
+Until, the accuracy platou's as well.
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}12}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Graph:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename pasted5.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see the graph with the minimal test error.
+\end_layout
+
+\begin_layout Standard
+The number of classifiers that yielded this result was 227, and the error
+ was 0 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}13}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Graphs:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Original Weights:
+\lang english
+ The plot of the data with the weight from the algorithm - 
+\begin_inset Formula $D^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename pasted6.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normalized Weights:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Graphics
+	filename pasted7.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explanation: The AdaBoost algorithm will re-weight the data point in each
+ iteration, assigning 
+\end_layout
+
+\begin_layout Standard
+a larger weight to samples we got wrong in the last iteration.
+ In this plot we see the weighted points
+\end_layout
+
+\begin_layout Standard
+After the last iteration.
+\end_layout
+
+\begin_layout Standard
+Now, in the first graph we see the raw implementation, and the point are
+ hard to see, only the border
+\end_layout
+
+\begin_layout Standard
+line is visible.
+ Yet if we normalize the point, as is done in the second graph we can see
+ the points.
+\end_layout
+
+\begin_layout Standard
+What we can see is that the largest points are the ones closest to the border
+ line, meaning these are the points
+\end_layout
+
+\begin_layout Standard
+we got wrong in the latest iterations, and so it makes sense that the border
+ was decided next to them.
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\mathcal{\mathcal{\mathfrak{\mathscr{\textrm{\ensuremath{\mathcal{Q}uestion} }}14}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Graphs for Noise = 0.01:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted18.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see similar results to the graph we saw in the zero noise graph,
+ the main differences
+\end_layout
+
+\begin_layout Standard
+are that the platou in the error was in 0.025 with 25 classifiers.
+\end_layout
+
+\begin_layout Standard
+Here we are also yet to see much of a difference in terms of the bias-variance
+ traid off.
+\end_layout
+
+\begin_layout Standard
+Spoilers - in the next noise level we will see the difference.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted9.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can start to see the noise 
+\begin_inset Quotes eld
+\end_inset
+
+confusing
+\begin_inset Quotes erd
+\end_inset
+
+ our model, and making it to start making mistakes.
+\end_layout
+
+\begin_layout Standard
+But still, the model is doing not too badly, and its boundary is reasonable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted10.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we can see that the noise is making it harder for the model to correctly
+ decide the boundary
+\end_layout
+
+\begin_layout Standard
+and there are indeed mistakes it makes, but overall it made an accurate
+ boundary.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted11.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted12.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see the weighted data points, and now its harder to assign meaning
+ to the size of the point
+\end_layout
+
+\begin_layout Standard
+in a meaningful way, those are simple noise points that the model got wrong.
+\end_layout
+
+\begin_layout Standard
+We can also see the decision boundary becoming more 
+\begin_inset Quotes eld
+\end_inset
+
+boxy
+\begin_inset Quotes erd
+\end_inset
+
+ and less round.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Graphs for Noise = 0.4:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted13.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we can finally see the variance-bias trade off in action.
+\end_layout
+
+\begin_layout Standard
+The data set was filled with noise, and so as we added more and more classifiers
+ we see the training
+\end_layout
+
+\begin_layout Standard
+error falling as it has in previous attempts.
+\end_layout
+
+\begin_layout Standard
+Yet the test error is more interesting, firstly we see a dip in the error,
+ but quickly we can start to see
+\end_layout
+
+\begin_layout Standard
+a rise in error, what could that be? Well the variance-bias trade-off might
+ have something to do with it ;)
+\end_layout
+
+\begin_layout Standard
+As we trained our model more and more, it started to try and fit to every
+ singly noise data - 
+\end_layout
+
+\begin_layout Standard
+and that a recipe for disaster, we can start to see our model overffiting
+ the data, and the test data error
+\end_layout
+
+\begin_layout Standard
+rising and rising.
+\end_layout
+
+\begin_layout Standard
+The min error that was achieved was in 
+\lang american
+0.325
+\lang english
+ with 12 classifiers.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted14.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As the noise level was so high we cant really see a trend in the number
+ of classifiers.
+\end_layout
+
+\begin_layout Standard
+All of them seem to do poorly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted15.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we can also see that the noise level was way too high and the model
+ couldn't really decide
+\end_layout
+
+\begin_layout Standard
+a logical decision boundary.
+ It tried its best, and it does resemble the previous graphs, but its 
+\end_layout
+
+\begin_layout Standard
+not accurate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted16.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted17.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The noise level was way too high and the model couldn't really decide
+\end_layout
+
+\begin_layout Standard
+a logical decision boundary.
+\end_layout
+
+\begin_layout Standard
+Yet one interesting thing to note is that the weights of the points are
+ kind of uniform, which
+\end_layout
+
+\begin_layout Standard
+might suggest that there were so many mis-classified points that they all
+ got a similar weight.
+ 
+\end_layout
+
+\end_body
+\end_document
